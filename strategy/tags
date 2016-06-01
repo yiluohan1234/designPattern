@@ -1,0 +1,46 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CBackDoor	BackDoor.cpp	/^CBackDoor::CBackDoor(void)$/;"	f	class:CBackDoor
+CBackDoor	BackDoor.h	/^class CBackDoor:public IStrategy$/;"	c
+CBlockEnemy	BlockEnemy.cpp	/^CBlockEnemy::CBlockEnemy(void)$/;"	f	class:CBlockEnemy
+CBlockEnemy	BlockEnemy.h	/^class CBlockEnemy:public IStrategy$/;"	c
+CC	Makefile	/^CC:=g++$/;"	m
+CContext	Context.cpp	/^CContext::CContext(IStrategy *pStrategy)$/;"	f	class:CContext
+CContext	Context.h	/^class CContext$/;"	c
+CFLAGS	Makefile	/^CFLAGS := -g -Wall -O3$/;"	m
+CGivenGreenLight	GivenGreenLight.cpp	/^CGivenGreenLight::CGivenGreenLight(void)$/;"	f	class:CGivenGreenLight
+CGivenGreenLight	GivenGreenLight.h	/^class CGivenGreenLight:public IStrategy$/;"	c
+CPPFLAGS	Makefile	/^CPPFLAGS := $(CFLAGS)$/;"	m
+DEPS	Makefile	/^DEPS := $(patsubst %.o,%.d,$(OBJS))$/;"	m
+EXECUTABLE	Makefile	/^EXECUTABLE := main    # 可执行文件名$/;"	m
+INCLUDES	Makefile	/^INCLUDES:=.           # 头文件目录$/;"	m
+IStrategy	IStrategy.h	/^		IStrategy(void){};$/;"	f	class:IStrategy
+IStrategy	IStrategy.h	/^class IStrategy$/;"	c
+LIBDIR	Makefile	/^LIBDIR:=              # 静态库目录$/;"	m
+LIBS	Makefile	/^LIBS :=               # 静态库文件名$/;"	m
+MISSING_DEPS	Makefile	/^MISSING_DEPS := $(filter-out $(wildcard $(DEPS)),$(DEPS))$/;"	m
+MISSING_DEPS_SOURCES	Makefile	/^MISSING_DEPS_SOURCES := $(wildcard $(patsubst %.d,%.cpp,$(MISSING_DEPS)))$/;"	m
+OBJS	Makefile	/^OBJS := $(patsubst %.cpp,%.o,$(SRCS))$/;"	m
+Operate	BackDoor.cpp	/^void CBackDoor::Operate(void)$/;"	f	class:CBackDoor
+Operate	BlockEnemy.cpp	/^void CBlockEnemy::Operate(void)$/;"	f	class:CBlockEnemy
+Operate	Context.cpp	/^void CContext::Operate(void)$/;"	f	class:CContext
+Operate	GivenGreenLight.cpp	/^void CGivenGreenLight::Operate(void)$/;"	f	class:CGivenGreenLight
+RM-F	Makefile	/^RM-F := rm -f$/;"	m
+SRCDIR	Makefile	/^SRCDIR:=              # 除了当前目录外，其他的源代码文件目录$/;"	m
+SRCS	Makefile	/^SRCS := $(wildcard *.cpp) $(wildcard $(addsuffix \/*.cpp, $(SRCDIR)))$/;"	m
+_BACKDOOR_H	BackDoor.h	9;"	d
+_BLOCKENEMY_H	BlockEnemy.h	9;"	d
+_CONTEXT_H	Context.h	9;"	d
+_GIVENGREENLIGHT_H	GivenGreenLight.h	9;"	d
+_ISTRATEGY_H	IStrategy.h	9;"	d
+m_pStrategy	Context.h	/^		IStrategy *m_pStrategy;$/;"	m	class:CContext
+main	main.cpp	/^int main()$/;"	f
+~CBackDoor	BackDoor.cpp	/^CBackDoor::~CBackDoor(void)$/;"	f	class:CBackDoor
+~CBlockEnemy	BlockEnemy.cpp	/^CBlockEnemy::~CBlockEnemy(void)$/;"	f	class:CBlockEnemy
+~CContext	Context.cpp	/^CContext::~CContext(void)$/;"	f	class:CContext
+~CGivenGreenLight	GivenGreenLight.cpp	/^CGivenGreenLight::~CGivenGreenLight(void)$/;"	f	class:CGivenGreenLight
+~IStrategy	IStrategy.h	/^		virtual ~IStrategy(void){};$/;"	f	class:IStrategy
